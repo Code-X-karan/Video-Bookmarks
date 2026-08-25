@@ -30,7 +30,7 @@ body {
 #app {
   display: flex;
   flex-direction: column;
-  max-height: 480px;
+  max-height: 560px;
 }
 
 .loading {
@@ -85,7 +85,7 @@ body {
 .bookmark-box {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  overflow: hidden;
+  overflow: visible;
   margin-bottom: 8px;
 }
 

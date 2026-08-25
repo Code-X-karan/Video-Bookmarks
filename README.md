@@ -8,8 +8,6 @@ A minimal Chrome extension for bookmarking exact timestamps in YouTube videos �
 - Click a bookmark to jump straight to that time
 - Rename / delete via the `⋮` menu, with a 4s undo after delete
 - Bookmarks grouped per video, with an "Other videos" browser
-- Keyboard shortcut `Ctrl+Shift+B` (`Cmd+Shift+B` on Mac) for quick capture
-- Works across YouTube's SPA navigation (including Shorts)
 - Bookmarks persist via `chrome.storage.local` — no account, no sync, no analytics
 
 ## Install
@@ -25,7 +23,6 @@ A minimal Chrome extension for bookmarking exact timestamps in YouTube videos �
 2. Open the popup → **+ Add Bookmark** → name it → **Save**.
 3. Click any bookmark later to jump to that timestamp.
 4. Rename/Delete from the `⋮` menu (delete shows an **Undo** toast).
-5. Or press `Ctrl+Shift+B` anytime to capture instantly via an on-page popup (shortcut is customizable at `chrome://extensions/shortcuts`).
 
 ## Structure
 
@@ -62,4 +59,4 @@ Only `storage` — no tabs, host, or scripting permissions beyond the declared Y
 
 - Timestamps may drift if a video is re-edited/re-uploaded.
 - Jumping from "Other videos" always opens a new tab.
-- Shorts deep-linking with a start time is best-effort (Shorts URLs don't reliably support `t=`).
+
